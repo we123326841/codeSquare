@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyAccountViewController">
+            <connections>
+                <outlet property="amountLbl" destination="Dj7-ZG-mLB" id="6tV-Sr-Zu8"/>
+                <outlet property="contentView" destination="c7B-3n-FkA" id="H0a-Cg-4Tp"/>
+                <outlet property="fundsButton" destination="esV-Lo-MWi" id="9rZ-ac-6ya"/>
+                <outlet property="isvipView" destination="hZw-8f-iCQ" id="HDS-5G-uWX"/>
+                <outlet property="nameLbl" destination="hN5-S6-6DL" id="IH7-mh-1BX"/>
+                <outlet property="recordMenu" destination="4gR-Qf-gyU" id="4M9-t3-I5U"/>
+                <outlet property="slideView" destination="6sU-Bf-t00" id="BBy-sl-hNL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wrapView" destination="qdg-qk-irr" id="KdZ-Gr-QEo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="qdg-qk-irr" userLabel="WrapView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="xy4-IV-eAV">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="195"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Resources.bundle/myaccount_bg.png" id="P43-rv-h23">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="195"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Resources.bundle/header.png" id="0Eq-cF-Wdb">
+                                    <rect key="frame" x="130" y="41" width="60" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XnE-R4-pUr">
+                                    <rect key="frame" x="280" y="0.0" width="40" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="Resources.bundle/btn_setting.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="gotoSetting:" destination="-1" eventType="touchUpInside" id="hfd-t3-oBg"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ztt-NS-IYA">
+                                    <rect key="frame" x="0.0" y="0.0" width="40" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" image="Resources.bundle/btn_email.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="gotoInfoCenter:" destination="-1" eventType="touchUpInside" id="xte-kw-5Lf"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hN5-S6-6DL">
+                                    <rect key="frame" x="80" y="7" width="160" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" id="Dj7-ZG-mLB">
+                                    <rect key="frame" x="80" y="102" width="160" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bwM-LN-lWo">
+                                    <rect key="frame" x="40" y="0.0" width="240" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="resetPosition:" destination="-1" eventType="touchUpInside" id="sIP-xi-gLT"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="esV-Lo-MWi">
+                                    <rect key="frame" x="238" y="95" width="74" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <state key="normal" title="开户中心 &gt;">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="gotoOpenAccount:" destination="-1" eventType="touchUpInside" id="gcQ-LR-gzA"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Resources.bundle/header_v.png" id="hZw-8f-iCQ">
+                                    <rect key="frame" x="169" y="80" width="21" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Resources.bundle/cell_line.png" id="hbf-fj-mwY">
+                                    <rect key="frame" x="0.0" y="141" width="320" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bn9-Gz-Ooh">
+                                    <rect key="frame" x="0.0" y="149" width="106" height="36"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal" image="Resources.bundle/user_center_cash.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" image="Resources.bundle/btn_withdraw_2.png"/>
+                                    <connections>
+                                        <action selector="gotoRecharge:" destination="-1" eventType="touchUpInside" id="bmg-z3-MfP"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Resources.bundle/cell_line.png" id="BE9-jf-dqI">
+                                    <rect key="frame" x="107" y="149" width="1" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Resources.bundle/cell_line.png" id="onB-v3-Vzm">
+                                    <rect key="frame" x="215" y="149" width="1" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xiH-bY-lb0">
+                                    <rect key="frame" x="216" y="149" width="106" height="36"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal" image="Resources.bundle/account_fund_icon.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" image="Resources.bundle/btn_withdraw_2.png"/>
+                                    <connections>
+                                        <action selector="gotoFundsDetail:" destination="-1" eventType="touchUpInside" id="4b6-VI-DOk"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2Mx-ed-Qx2">
+                                    <rect key="frame" x="107" y="149" width="106" height="36"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal" image="Resources.bundle/user_center_recharge.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" image="Resources.bundle/btn_charge_2.png"/>
+                                    <connections>
+                                        <action selector="gotoWithdraw:" destination="-1" eventType="touchUpInside" id="JV7-lE-RVA"/>
+                                    </connections>
+                                </button>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PhC-27-t5v">
+                                    <rect key="frame" x="252" y="57" width="46" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Button"/>
+                                    <connections>
+                                        <action selector="gaoJiZhuiHao:" destination="-1" eventType="touchUpInside" id="Hs0-bM-HMZ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="c7B-3n-FkA">
+                            <rect key="frame" x="0.0" y="190" width="320" height="373"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Resources.bundle/myaccount_mid_bg.png" id="hEb-GB-qQg">
+                                    <rect key="frame" x="-5" y="0.0" width="330" height="35"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" id="6sU-Bf-t00" customClass="SlideSwitchView">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="375"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" id="4gR-Qf-gyU" customClass="DropDownMenu">
+                                    <rect key="frame" x="0.0" y="5" width="82" height="35"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="138" y="163"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Resources.bundle/account_fund_icon.png" width="16" height="16"/>
+        <image name="Resources.bundle/btn_charge_2.png" width="16" height="16"/>
+        <image name="Resources.bundle/btn_email.png" width="16" height="16"/>
+        <image name="Resources.bundle/btn_setting.png" width="16" height="16"/>
+        <image name="Resources.bundle/btn_withdraw_2.png" width="16" height="16"/>
+        <image name="Resources.bundle/cell_line.png" width="16" height="16"/>
+        <image name="Resources.bundle/header.png" width="16" height="16"/>
+        <image name="Resources.bundle/header_v.png" width="16" height="16"/>
+        <image name="Resources.bundle/myaccount_bg.png" width="16" height="16"/>
+        <image name="Resources.bundle/myaccount_mid_bg.png" width="16" height="16"/>
+        <image name="Resources.bundle/user_center_cash.png" width="16" height="16"/>
+        <image name="Resources.bundle/user_center_recharge.png" width="16" height="16"/>
+    </resources>
+</document>
